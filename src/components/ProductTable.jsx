@@ -4,7 +4,7 @@ import React from 'react';
 import SearchBar from '../components/SearchBar'
 function ProductTable({ data }) {
   return (
-    <div className='bg-white rounded- m-4 p-4'>
+    <div className='bg-white rounded m-4 p-4'>
       <h1 className='flex text-lg font-bold'>Product Sell
       <div className='flex-grow'></div>
       <SearchBar border='none'/>
@@ -22,7 +22,7 @@ function ProductTable({ data }) {
           {data.map((product, index) => (
             <tr className='text-black' key={index}>
               <td className='p-2 flex flex-row'>
-              <img src={product.avatar} className='h-12 rounded-xl p-2' alt="Product Avatar" />
+              <img src={product.avatar} className='hidden md:block h-12 rounded-xl p-2' alt="Product Avatar" />
               <div className='text-left flex flex-col'>
                 <h3 className='text-black font-bold'>{product.productName}</h3>
                 <p className='text-gray-500'>{product.productDescription}</p>

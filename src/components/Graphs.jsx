@@ -9,7 +9,7 @@ const Graphs = () => {
 			<div className="w-full sm:w-1/2 md:w-full lg:w-full xl:w-full flex-1 text-xs">
 				<ResponsiveContainer width="100%" height="100%">
 					<BarChart
-						width={200}
+						width={500}
 						height={300}
 						data={SalesData}
 						margin={{
