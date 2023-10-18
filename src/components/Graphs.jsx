@@ -1,4 +1,4 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
+import { BarChart, Bar, XAxis, Tooltip,ResponsiveContainer } from 'recharts'
 import { SalesData } from '../data/SalesData'
 const Graphs = () => {
  
@@ -6,11 +6,10 @@ const Graphs = () => {
 		<div className="h-[22rem] bg-white p-4 rounded-sm border border-gray-200 flex flex-col flex-1">
 			<h3 className='text-xl font-bold'>Overview</h3>
       <strong className="text-gray-400 font-medium">Monthly Earning</strong>
-			<div className="w-full sm:w-1/2 md:w-full lg:w-full xl:w-full flex-1 text-xs">
-				<ResponsiveContainer width="100%" height="100%">
+			<div className="w-full md:w-full flex-1 text-xs">
+				<ResponsiveContainer width={"100%"} height={"90%"}>
 					<BarChart
-						width={500}
-						height={300}
+					 width={400} height={400}
 						data={SalesData}
 						margin={{
 							top: 20,

@@ -2,7 +2,6 @@ import React from 'react'
 import DashboardStatsGrid from './DashboardStatsGrid'
 import Graphs from './Graphs'
 import DCircleChart from './DCircleChart'
-import Products from './Products'
 import DataTable from './Products'
 
 function Dashboard() {
